@@ -48,6 +48,7 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 NeoBundle "scrooloose/nerdtree"
+NeoBundle "scrooloose/nerdcommenter"
 "NeoBundle "tomtom/tlib_vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils"
 NeoBundle "bling/vim-airline"
@@ -63,6 +64,7 @@ NeoBundle "cmather/vim-meteor-snippets"
 NeoBundle "Shougo/unite.vim"
 NeoBundle "kien/ctrlp.vim"
 NeoBundle "Shougo/vimshell.vim"
+NeoBundle "Shougo/neocomplcache.vim"
 NeoBundle "marijnh/tern_for_vim"
 NeoBundle "digitaltoad/vim-jade"
 
@@ -146,12 +148,18 @@ nnoremap <silent> <c-j> :wincmd j<cr>
 nnoremap <silent> <c-h> :wincmd h<cr>
 nnoremap <silent> <c-l> :wincmd l<cr>
 
+" VimShell
+nnoremap <Leader>c :VimShell<cr> 
+
 " Exit insert mode and write file
 inoremap <leader>w <Esc> :w<cr>
 nnoremap <leader>w :w<cr>
 
 " NERDTreeToggle
 nnoremap <leader><Tab> :NERDTreeToggle<cr>
+
+" NERDCommenter
+map <leader>m  <plug>NERDCommenterToggle
 
 
 " Unite
@@ -164,3 +172,7 @@ nnoremap <Leader>g :Unite -buffer-name=register -start-insert register<cr>
 nnoremap <Leader>o :Unite -buffer-name=outline -start-insert outline<cr>
 nnoremap <Leader>y :Unite -buffer-name=yank history/yank<cr>
 nnoremap <Leader>e :Unite -buffer-name=buffer buffer<cr>
+
+
+" Neocomplcache
+let g:neocomplcache_enable_at_startup = 1
