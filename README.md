@@ -1,7 +1,7 @@
 dotvim
 ======
 
-My vim setup
+My vim setup :)
 
 ```bash
 > git clone https://github.com/gabrielameida/dotvim.git
