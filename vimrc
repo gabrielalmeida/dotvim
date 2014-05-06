@@ -47,16 +47,16 @@ NeoBundle 'Shougo/vimproc', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
-NeoBundle "Lokaltog/vim-distinguished"
+"NeoBundle "Lokaltog/vim-distinguished"
 NeoBundle "scrooloose/nerdtree"
-NeoBundle "tomtom/tlib_vim"
-NeoBundle "MarcWeber/vim-addon-mw-utils"
+"NeoBundle "tomtom/tlib_vim"
+"NeoBundle "MarcWeber/vim-addon-mw-utils"
 NeoBundle "bling/vim-airline"
 NeoBundle "flazz/vim-colorschemes"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
 NeoBundle "tpope/vim-surround"
-NeoBundle "nono/vim-handlebars"
+"NeoBundle "nono/vim-handlebars"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "groenewege/vim-less"
 NeoBundle "garbas/vim-snipmate"
