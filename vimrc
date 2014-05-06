@@ -134,8 +134,11 @@ nnoremap <Leader>n :call NumberToggle()<cr>
 " imap <Tab> <C-N>
 
 " Split windows
-nnoremap <Leader>s :sp<cr><C-w><C-w>
+nnoremap <Leader>h :sp<cr><C-w><C-w>
 nnoremap <Leader>v :vsp<cr><C-w><C-w>
+
+" Fugitive bindings
+nnoremap <Leader>s :Gstatus<cr>
 
 " Easily switch between windows
 nnoremap <silent> <c-k> :wincmd k<cr>
@@ -156,7 +159,7 @@ let g:unite_source_history_yank_enable=1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <Leader>t :Unite -buffer-name=files -start-insert file_rec/async:!<cr>
 nnoremap <Leader>f :Unite -buffer-name=files -start-insert file<cr>
-nnoremap <Leader>r :Unite -buffer-name=mru -start-insert file_mru<cr>
+"nnoremap <Leader>r :Unite -buffer-name=mru -start-insert file_mru<cr>
 nnoremap <Leader>g :Unite -buffer-name=register -start-insert register<cr>
 nnoremap <Leader>o :Unite -buffer-name=outline -start-insert outline<cr>
 nnoremap <Leader>y :Unite -buffer-name=yank history/yank<cr>
