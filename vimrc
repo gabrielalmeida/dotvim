@@ -47,7 +47,6 @@ NeoBundle 'Shougo/vimproc', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
-"NeoBundle "Lokaltog/vim-distinguished"
 NeoBundle "scrooloose/nerdtree"
 "NeoBundle "tomtom/tlib_vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils"
@@ -56,7 +55,6 @@ NeoBundle "flazz/vim-colorschemes"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
 NeoBundle "tpope/vim-surround"
-"NeoBundle "nono/vim-handlebars"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "groenewege/vim-less"
 NeoBundle "garbas/vim-snipmate"
@@ -65,12 +63,14 @@ NeoBundle "cmather/vim-meteor-snippets"
 NeoBundle "Shougo/unite.vim"
 NeoBundle "kien/ctrlp.vim"
 NeoBundle "Shougo/vimshell.vim"
+NeoBundle "marijnh/tern_for_vim"
+NeoBundle "digitaltoad/vim-jade"
+
 
 filetype plugin indent on
 
 NeoBundleCheck
 
-"colorscheme distinguished
 colorscheme vividchalk
 syntax on
 highlight ColorColumn ctermbg=white
