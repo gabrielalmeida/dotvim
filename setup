@@ -21,13 +21,13 @@ fi
 
 if [ ! -d vim/bundle ]; then
   echo "Creating bundle directory."
-  mkdir vim/bundle
+  mkdir "$PWD"/vim/bundle
 fi
 
 echo "Cloning neobundle into bundle directory"
 git clone https://github.com/Shougo/neobundle.vim vim/bundle/neobundle.vim
 
 echo "Installing bundles"
-vim/bundle/neobundle.vim/bin/neoinstall
+"$PWD"/vim/bundle/neobundle.vim/bin/neoinstall
 
 echo "Vim setup is complete"
