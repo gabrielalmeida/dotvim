@@ -50,7 +50,7 @@ NeoBundle 'Shougo/vimproc', {
 "NeoBundle "Lokaltog/vim-distinguished"
 NeoBundle "scrooloose/nerdtree"
 "NeoBundle "tomtom/tlib_vim"
-"NeoBundle "MarcWeber/vim-addon-mw-utils"
+NeoBundle "MarcWeber/vim-addon-mw-utils"
 NeoBundle "bling/vim-airline"
 NeoBundle "flazz/vim-colorschemes"
 NeoBundle "tpope/vim-fugitive"
