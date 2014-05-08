@@ -49,7 +49,7 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "scrooloose/nerdcommenter"
-"NeoBundle "tomtom/tlib_vim"
+NeoBundle "tomtom/tlib_vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils"
 NeoBundle "bling/vim-airline"
 NeoBundle "flazz/vim-colorschemes"
