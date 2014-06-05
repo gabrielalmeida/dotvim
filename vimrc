@@ -31,6 +31,8 @@ set completeopt=longest,menu
 set wildmode=list:longest,list:full
 set complete=.,t
 
+" If we are on OS X, NERDTree Arrows don't work well, so disable them
+let g:NERDTreeDirArrows=0
 
 " Set up NeoBundle
 set rtp+=~/.vim/bundle/neobundle.vim/
