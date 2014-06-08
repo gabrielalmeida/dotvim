@@ -27,6 +27,16 @@ set colorcolumn=80
 set backspace=indent,eol,start
 set nowrap
 
+" maintain undo over a single session
+"set hidden 
+
+" Maintain undo forever, even after a restart
+" tell it to use an undo file
+set undofile
+" set a directory to store the undo history(create this dir manually before)
+set undodir=~/.vimundo/
+
+
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
@@ -35,7 +45,7 @@ set wildmode=list:longest,list:full
 set complete=.,t
 
 " If we are on OS X, NERDTree Arrows don't work well, so disable them
-let g:NERDTreeDirArrows=0
+"let g:NERDTreeDirArrows=0
 
 " Set up NeoBundle
 set rtp+=~/.vim/bundle/neobundle.vim/
