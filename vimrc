@@ -6,7 +6,7 @@ set backupdir=~/.vim_backup//
 set directory=~/.vim_swp//
 set ruler
 set number
-set expandtab
+"set expandtab
 set laststatus=2
 set incsearch
 set autoindent
@@ -82,6 +82,13 @@ NeoBundle "Shougo/vimshell.vim"
 NeoBundle "Shougo/neocomplcache.vim"
 NeoBundle "marijnh/tern_for_vim"
 NeoBundle "digitaltoad/vim-jade"
+NeoBundle "mattn/emmet-vim"
+
+" PHP/Laravel things
+"NeoBundle "shawncplus/phpcomplete.vim"
+NeoBundle "xsbeats/vim-blade.git"
+NeoBundle 'm2mdas/phpcomplete-extended'
+NeoBundle 'm2mdas/phpcomplete-extended-laravel'
 
 
 filetype plugin indent on
