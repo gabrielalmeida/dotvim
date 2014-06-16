@@ -85,16 +85,28 @@ NeoBundle "digitaltoad/vim-jade"
 NeoBundle "mattn/emmet-vim"
 
 " PHP/Laravel things
-"NeoBundle "shawncplus/phpcomplete.vim"
 NeoBundle "xsbeats/vim-blade.git"
 NeoBundle 'm2mdas/phpcomplete-extended'
 NeoBundle 'm2mdas/phpcomplete-extended-laravel'
 
+NeoBundle "Yggdroot/indentLine"
+NeoBundle "Rykka/colorv.vim"
+NeoBundle "lilydjwg/colorizer"
 
 filetype plugin indent on
 
 NeoBundleCheck
 
+
+" Load jade syntax
+au BufNewFile,BufRead,BufReadPost *.jade.html set filetype=jade
+
+
+" Colorize my colors here vim pl0x
+let g:colorv_preview_ftype='css,html,js,coffee,sass,scss,less,styl,svg'
+
+
+" Colorscheme
 colorscheme vividchalk
 syntax on
 highlight ColorColumn ctermbg=white
@@ -103,32 +115,32 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
-"if has("autocmd")
-  "filetype plugin indent on
+if has("autocmd")
+  filetype plugin indent on
 
-  "autocmd BufNewFile,BufRead *.txt setfiletype text
+  autocmd BufNewFile,BufRead *.txt setfiletype text
 
-  "autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
+  autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
 
-  "au FocusLost * :set number
-  "au InsertEnter * :set number
+  au FocusLost * :set number
+  au InsertEnter * :set number
 
-  "augroup vimrcEx
-  "au!
+  augroup vimrcEx
+  au!
 
-  "autocmd BufReadPost *
-    "\ if line("'\"") > 0 && line("'\"") <= line("$") |
-    "\   exe "normal g`\"" |
-    "\ endif
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
 
   " Automatically load .vimrc source when saved
   autocmd BufWritePost .vimrc source $MYVIMRC
 
-  "augroup END
+  augroup END
 
-"else
-  "set autoindent
-"endif " has("autocmd")
+else
+  set autoindent
+endif " has("autocmd")
 
 " automatically open quickfix window on grep searches
 autocmd QuickFixCmdPost *grep* cwindow
@@ -155,7 +167,7 @@ inoremap <C-c> <Esc>
 nnoremap <Leader>n :call NumberToggle()<cr>
 
 " Is this for autocomplete?
-" imap <Tab> <C-N>
+imap <Tab> <C-N>
 
 " Split windows
 nnoremap <Leader>h :sp<cr><C-w><C-w>
