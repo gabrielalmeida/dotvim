@@ -1,9 +1,7 @@
-
-" Settings
 set nocompatible
 set sh=/bin/bash
-set backupdir=~/.vim_backup//
-set directory=~/.vim_swp//
+set backupdir=~/.vim_backup/
+set directory=~/.vim_swp/
 set ruler
 set number
 "set expandtab
@@ -27,15 +25,15 @@ set colorcolumn=80
 set backspace=indent,eol,start
 set nowrap
 
-" maintain undo over a single session
+"maintain undo on a single session
 "set hidden 
 
-" Maintain undo forever, even after a restart
-" tell it to use an undo file
+"Maintain undo forever, even after a restart
+"tell it to use an undo file
 set undofile
-" set a directory to store the undo history(create this dir manually before)
-set undodir=~/.vimundo/
 
+"set a directory to store the undo history(create this dir manually before)
+set undodir=~/.vimundo/
 
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
@@ -138,8 +136,8 @@ NeoBundle "rizzatti/dash.vim"
 " PHP/Laravel things
 NeoBundle "xsbeats/vim-blade.git" " Laravel blade templating engine
 NeoBundle "StanAngeloff/php.vim"
-NeoBundle "m2mdas/phpcomplete-extended"
-NeoBundle "m2mdas/phpcomplete-extended-laravel"
+"NeoBundle "m2mdas/phpcomplete-extended"
+"NeoBundle "m2mdas/phpcomplete-extended-laravel"
 
 " Lolololo loremipsum!!
 NeoBundle "vim-scripts/loremipsum"
