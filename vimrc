@@ -120,6 +120,7 @@ NeoBundle "pangloss/vim-javascript"
 
 " Less/Stylus
 NeoBundle "groenewege/vim-less"
+NeoBundle "wavded/vim-stylus.git"
 
 " Jade
 NeoBundle "digitaltoad/vim-jade"
