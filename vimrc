@@ -4,11 +4,11 @@ set backupdir=~/.vim_backup/
 set directory=~/.vim_swp/
 set ruler
 set number
-"set expandtab
 set laststatus=2
 set incsearch
-set autoindent
 set showcmd
+set autoindent
+set expandtab
 set tabstop=2
 set shiftwidth=2
 set numberwidth=5
