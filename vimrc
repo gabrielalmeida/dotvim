@@ -74,9 +74,18 @@ NeoBundle "tpope/vim-surround"
 NeoBundle "Shougo/unite.vim"
 NeoBundle "Shougo/vimshell.vim"
 NeoBundle "marijnh/tern_for_vim"
+
 NeoBundle "Yggdroot/indentLine"
+let g:indentLine_color_term = 252 
+let g:indentLine_color_gui = '#A4E57E'
+let g:indentLine_color_tty_light = 4
+let g:indentLine_color_tty_dark = 2
+let g:indentLine_char = '¦'
 
 " Snips/Completation
+let g:EclimCompletionMethod = 'omnifunc' " Eclim for JAVA
+
+NeoBundle "ervandew/supertab"
 NeoBundle "Shougo/neocomplcache.vim" " Should use neocomplete!!
 NeoBundle "SirVer/ultisnips"
 NeoBundle "honza/vim-snippets"
@@ -153,13 +162,14 @@ au BufNewFile,BufRead,BufReadPost *.jade.html set filetype=jade
 
 
 " Colorize my colors here vim pl0x
-let g:colorv_preview_ftype='css,html,js,coffee,sass,scss,less,styl,svg'
+let g:colorv_preview_ftype='css,php,html,js,coffee,sass,scss,less,styl,svg'
 
 
 " Colorscheme
-colorscheme vividchalk
+colorscheme solarized 
+set background=light
 syntax on
-highlight ColorColumn ctermbg=white
+"highlight ColorColumn ctermbg=white
 
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
@@ -176,15 +186,15 @@ if has("autocmd")
   au InsertEnter * :set number
 
   augroup vimrcEx
-  au!
+    au!
 
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+    autocmd BufReadPost *
+          \ if line("'\"") > 0 && line("'\"") <= line("$") |
+          \   exe "normal g`\"" |
+          \ endif
 
-  " Automatically load .vimrc source when saved
-  autocmd BufWritePost .vimrc source $MYVIMRC
+    " Automatically load .vimrc source when saved
+    autocmd BufWritePost .vimrc source $MYVIMRC
 
   augroup END
 
@@ -250,7 +260,7 @@ let g:unite_source_history_yank_enable=1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <Leader>t :Unite -buffer-name=files -start-insert file_rec/async:!<cr>
 nnoremap <Leader>f :Unite -buffer-name=files -start-insert file<cr>
-"nnoremap <Leader>r :Unite -buffer-name=mru -start-insert file_mru<cr>
+nnoremap <Leader>r :Unite -buffer-name=mru -start-insert file_mru<cr>
 nnoremap <Leader>g :Unite -buffer-name=register -start-insert register<cr>
 nnoremap <Leader>o :Unite -buffer-name=outline -start-insert outline<cr>
 nnoremap <Leader>y :Unite -buffer-name=yank history/yank<cr>

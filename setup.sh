@@ -21,7 +21,7 @@ fi
 
 if [ ! -d vim/bundle ]; then
   echo "Creating bundle directory."
-  mkdir "$PWD"/vim/bundle
+  mkdir -p "$PWD"/vim/bundle
 fi
 
 echo "Cloning neobundle into bundle directory"
