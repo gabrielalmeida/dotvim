@@ -74,6 +74,7 @@ NeoBundle "tpope/vim-surround"
 NeoBundle "Shougo/unite.vim"
 NeoBundle "Shougo/vimshell.vim"
 NeoBundle "marijnh/tern_for_vim"
+NeoBundle "coderifous/textobj-word-column.vim"
 
 NeoBundle "Yggdroot/indentLine"
 let g:indentLine_color_term = 252 
@@ -136,6 +137,9 @@ NeoBundle "digitaltoad/vim-jade"
 
 " Meteor
 NeoBundle "cmather/vim-meteor-snippets"
+
+" HTML5
+NeoBundle 'othree/html5.vim'
 
 " Emmet 
 NeoBundle "mattn/emmet-vim"
