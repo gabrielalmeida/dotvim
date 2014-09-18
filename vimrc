@@ -170,8 +170,8 @@ let g:colorv_preview_ftype='css,php,html,js,coffee,sass,scss,less,styl,svg'
 
 
 " Colorscheme
-colorscheme solarized 
-set background=light
+colorscheme jellybeans 
+set background=dark
 syntax on
 "highlight ColorColumn ctermbg=white
 
